@@ -30,9 +30,10 @@ class Item extends React.Component {
   handleChange(event) {
     this.setState({ value: parseInt(event.target.value) });
   }
-  handelQty(event){
-    this.setState({qty:event.target.value})
-  }
+  handelQty = event => {
+    this.setState({ qty:event.target.value });
+    console.log(event.target.value)
+  };
 
   render() {
     const imgStyle = {
